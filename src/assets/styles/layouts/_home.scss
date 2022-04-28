@@ -52,7 +52,8 @@ body {
     display: block;
   }
 
-  h1 {
+  h1,
+  .grid_title {
     font-family: $header-font;
     color: $accent;
     font-size: calc(3em + 7vw);
@@ -60,6 +61,7 @@ body {
     font-weight: bold;
   }
 
+  .grid_subtitle,
   h2 {
     text-transform: uppercase;
     font-size: calc(1em + 0.5vw);
@@ -67,70 +69,46 @@ body {
     margin-bottom: 1em;
   }
 
-  .about {
+  .grid_text {
     line-height: 1.3;
     margin-bottom: 1em;
     text-align: justify;
+    grid-area: grid_text;
   }
 
-  a {
+  .grid_link {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 2em;
     font-weight: bold;
+    grid-area: grid_link;
   }
 
-  img {
-    width: 90%;
+  .grid_image {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     min-width: 300px;
-
+    grid-area: grid_image;
   }
 
-  .location {
+  .grid_location {
     text-transform: uppercase;
     line-height: 1.5;
     font-weight: bold;
+    grid-area: grid_location;
   }
 
-  button {
+  .grid_info {
     border: 0;
     text-transform: uppercase;
     font-size: 100%;
     padding: 1em 2em;
     right: 1em;
     bottom: 1em;
+    grid-area: grid_info;
   }
-}
-
-.grid_title {
-  grid-area: grid_title;
-}
-
-.grid_subtitle {
-  grid-area: grid_subtitle;
-}
-
-.grid_image {
-  grid-area: grid_image;
-}
-
-.grid_text {
-  grid-area: grid_text;
-}
-
-.grid_info {
-  grid-area: grid_info;
-}
-
-.grid_location {
-  grid-area: grid_location;
-}
-
-.grid_link {
-  grid-area: grid_link;
 }
 
 // Grid layout for wide display
@@ -187,19 +165,24 @@ body {
       font-size: calc(2em + 3.5vw);
     }
 
-    .grid_image {
-      min-width: 525px;
-    }
-
     .grid_subtitle {
       writing-mode: vertical-rl;
+    }
+
+    .grid_info {
+      margin-top: 0.5em;
+      max-width: 300px;
+    }
+
+    .grid_link {
+      max-width: 250px;
     }
 
   }
 
 }
 
-//
+// cartel
 .cartel {
   text-align: center;
 
@@ -229,32 +212,4 @@ body {
 
   }
 
-}
-
-//general
-/*------------------------------------*\
-#GENERAL-STYLES
-\*------------------------------------*/
-
-
-.img-cover {
-
-  width: 100%;
-  object-fit: cover;
-}
-
-.img-footer {
-  max-width: 200px;
-}
-
-.element--center {
-  text-align: center;
-}
-
-.mt-7 {
-  margin-top: 70px;
-}
-
-.carousel-inner {
-  height: 500px;
 }
