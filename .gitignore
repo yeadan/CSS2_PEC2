@@ -251,3 +251,5 @@ $RECYCLE.BIN/
 
 ### UOC Boilerplate ###
 dist
+node_modules
+.parcel-cache
