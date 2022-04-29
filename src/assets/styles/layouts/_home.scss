@@ -1,16 +1,4 @@
-// // Settings
-@font-face {
-  font-family: 'Galatia SIL';
-  src: url('https://www.chenhuijing.com/demos/grids-tycho/fonts/galsilb.eot');
-  src: url('https://www.chenhuijing.com/demos/grids-tycho/fonts/galsilb.eot?#iefix') format('embedded-opentype'),
-    url('https://www.chenhuijing.com/demos/grids-tycho/fonts/galsilb.woff2') format('woff2'),
-    url('https://www.chenhuijing.com/demos/grids-tycho/fonts/galsilb.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-$header-font: 'Galatia SIL',
-Georgia,
+$header-font: Georgia,
 serif;
 $body-font: 'Avenir Book',
 'Franklin Gothic Medium',
@@ -214,6 +202,48 @@ body {
   padding-bottom: 20px;
 }
 
+//info
+.presentation {
+  padding: 2.5% 15% 2.5% 15%;
+  margin-top: 0%;
+  text-align: justify;
+}
+
+.presentation img {
+  width: 100%;
+}
+
+.blockquote {
+  line-height: 1.4;
+  position: relative;
+  padding: .5rem;
+  margin-left: 3rem;
+  font-style: italic;
+}
+
+.blockquote-footer {
+  text-align: right;
+}
+
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  color: #f1efe6;
+  font-size: 6rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+blockquote:before {
+  content: '“';
+  left: -3rem;
+  top: -1rem;
+}
+
+blockquote:after {
+  content: '”';
+  right: -3rem;
+}
 
 //Flex
 .flex {
@@ -233,5 +263,4 @@ body {
     }
 
   }
-
 }
