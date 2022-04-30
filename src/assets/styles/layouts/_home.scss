@@ -23,9 +23,7 @@ body {
     margin: 0 auto;
   }
   _:-ms-input-placeholder,
-  :root main {
-    display: block;
-  }
+  :root main { display: block; }
   .wrapper-title {
     margin-bottom: 0.25em;
     font-family: $header-font;
@@ -76,7 +74,20 @@ body {
     border: 0;
   }
 }
-// Grid layout for wide display
+//Grid layout for wide display
+//Old browsers
+@media (min-width: 1024px) {
+  .wrapper-image {
+    float: left;
+    width: 60%;
+    margin-right: 50px;
+  }
+  .wrapper-text {
+    float: left;
+    width: 60%;
+  }
+}
+//Grid display
 @supports (display:grid) {
   .wrapper {
     display: grid;
@@ -103,12 +114,8 @@ body {
         "wrapper-location  wrapper-link";
       grid-template-columns: 1fr 1fr;
     }
-    .wrapper-title {
-      font-size: calc(2em + 5vw);
-    }
-    .wrapper-image {
-      min-width: 350px;
-    }
+    .wrapper-title { font-size: calc(2em + 5vw); }
+    .wrapper-image { min-width: 350px; }
   }
   @media (min-width: 1280px) {
     .wrapper {
@@ -120,19 +127,13 @@ body {
         "wrapper-location wrapper-info wrapper-link";
       grid-template-columns: 1fr 1fr 1fr;
     }
-    .wrapper-title {
-      font-size: calc(2em + 3.5vw);
-    }
-    .wrapper-subtitle {
-      writing-mode: vertical-rl;
-    }
+    .wrapper-title { font-size: calc(2em + 3.5vw); }
+    .wrapper-subtitle { writing-mode: vertical-rl; }
     .wrapper-info {
       max-width: 300px;
       margin-top: 0.5em;
     }
-    .wrapper-link {
-      max-width: 250px;
-    }
+    .wrapper-link { max-width: 250px; }
   }
 }
 
@@ -169,9 +170,7 @@ body {
   margin-top: 0%;
   text-align: justify;
 }
-.presentation-image {
-  width: 100%;
-}
+.presentation-image { width: 100%; }
 .blockquote {
   position: relative;
   padding: 0.5rem;
@@ -179,9 +178,7 @@ body {
   font-style: italic;
   line-height: 1.4;
 }
-.blockquote-footer {
-  text-align: right;
-}
+.blockquote-footer { text-align: right; }
 .blockquote::before,
 .blockquote::after {
   position: absolute;
