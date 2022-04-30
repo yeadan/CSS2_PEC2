@@ -7,6 +7,7 @@
   "rules": {
     "at-rule-empty-line-before": "never",
     "at-rule-no-unknown": null,
+    "function-no-unknown": null,
     "at-rule-semicolon-newline-after": "always",
     "at-rule-name-space-after": "always",
     "at-rule-name-case": "lower",
@@ -47,10 +48,17 @@
     "property-case": "lower",
     "rule-empty-line-before": "never",
     "scss/at-rule-no-unknown": true,
+    "scss/no-global-function-names": null,
+    "scss/at-import-partial-extension": null,
     "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "selector-no-vendor-prefix": [true, {
+      "ignoreSelectors": ["/input/"]
+    }],
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
-    "selector-type-no-unknown": true,
+    "selector-type-no-unknown": [true, {
+      "ignoreTypes": ["/_/"]
+    }],
     "selector-type-case": "lower",
     "selector-pseudo-element-case": "lower",
     "selector-pseudo-class-case": "lower",
