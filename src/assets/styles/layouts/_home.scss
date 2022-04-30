@@ -26,7 +26,6 @@ body {
   :root main {
     display: block;
   }
-  h1,
   .wrapper-title {
     margin-bottom: 0.25em;
     font-family: $header-font;
@@ -34,8 +33,7 @@ body {
     font-weight: bold;
     color: $accent;
   }
-  .wrapper-subtitle,
-  h2 {
+  .wrapper-subtitle {
     margin-bottom: 1em;
     font-size: calc(1em + 0.5vw);
     color: lighten($color: $text, $amount: 50%);
