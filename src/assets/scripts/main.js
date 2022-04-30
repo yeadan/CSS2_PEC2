@@ -5,5 +5,5 @@
 
 import * as bootstrap from 'bootstrap';
 
-let a = bootstrap;
+let a = bootstrap; //para que el autoguardado no borre el import
 
